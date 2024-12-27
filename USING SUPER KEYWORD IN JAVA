@@ -1,0 +1,23 @@
+//INPUT
+class Parent{
+  int a =10;
+  void display(){
+    System.out.println("The Parent class is:");
+  }
+}
+  class Child extends Parent{
+    int a=20;
+    void display(){
+    System.out.println("The Child class is:"+a);
+    System.out.println("The Parent class using super is :" +super.a);
+  } 
+}
+public class main{
+  public static void main(String[] args){
+    Child child=new Child();
+    child.display();
+  }
+}
+//OUTPUT
+The Child class is:20
+The Parent class using super is :10
